@@ -11,3 +11,6 @@ This simple node-watcher will watch for the change in the file specified via `FI
 | TO_ADDRESS | Receiver's address |
 | FROM_ADDRESS | From address |
 | FILE_LOCATION | location of the file to watch for. |
+
+## Docker
+To use this image as a docker, follow the below steps.
