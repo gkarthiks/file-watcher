@@ -16,5 +16,5 @@ This simple node-watcher will watch for the change in the file specified via `FI
 To use this image as a docker, follow the below steps.
 
 ```shell
-docker run --name file-watcher -e SMTP_HOST=domain.com -e SMTP_PORT=25 -e SMTP_PORT=25 -e TO_ADDRESS=to@domain.com -e FROM_ADDRESS=from@domain.com -e FILE_LOCATION=<LOCATION_OF_FILE> -d gkarthics/file-watcher
+docker run --name file-watcher -e SMTP_HOST=<domain.com> -e SMTP_PORT=<25> -e TO_ADDRESS=<to@domain.com> -e <FROM_ADDRESS>=from@domain.com -e FILE_LOCATION=<LOCATION_OF_FILE> -d gkarthics/file-watcher
 ```
