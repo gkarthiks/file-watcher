@@ -43,5 +43,11 @@ spec:
       - name: FROM_ADDRESS
         value: <from@domain.com>
       - name: FILE_LOCATION
-        value: <File location in the volumes>
+        value: </data/data.txt>
+    volumeMounts:
+      - name: data
+        mountPath: /data
+  volumes:
+  - name: data
+    emptyDir: {}
 ```
