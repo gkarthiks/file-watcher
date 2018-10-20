@@ -1,0 +1,16 @@
+{
+  "name": "file-watcher",
+  "version": "1.0.0",
+  "description": "Watches for the changes in the file and triggers email",
+  "main": "file-watcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/file-watcher.js"
+  },
+  "author": "Karthikeyan Govindaraj <github.gkarthiks@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^4.6.7",
+    "tail-stream": "^0.3.4"
+  }
+}
