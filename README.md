@@ -18,3 +18,30 @@ To use this image as a docker, follow the below steps.
 ```shell
 docker run --name file-watcher -e SMTP_HOST=<domain.com> -e SMTP_PORT=<25> -e TO_ADDRESS=<to@domain.com> -e FROM_ADDRESS=<from@domain.com> -e FILE_LOCATION=<LOCATION_OF_FILE> -d gkarthics/file-watcher
 ```
+
+## Kubernetes Pod
+To use this image in kubernetes, below is a sample pod configuration file. This image can be used in parallel with someother images to watch the file changes made.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: file-watcher
+  name: file-watcher
+spec:
+  containers:
+  - image: gkarthics/file-watcher
+    name: file-watcher
+    env:
+      - name: SMTP_HOST
+        value: <smtp.domain.com>
+      - name: SMTP_PORT
+        value: 25
+      - name: TO_ADDRESS
+        value: <to@domain.com>
+      - name: FROM_ADDRESS
+        value: <from@domain.com>
+      - name: FILE_LOCATION
+        value: <File location in the volumes>
+```
