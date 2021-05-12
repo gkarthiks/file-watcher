@@ -10,7 +10,7 @@
   "author": "Karthikeyan Govindaraj <github.gkarthiks@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "nodemailer": "^4.6.7",
+    "nodemailer": "^6.4.16",
     "tail-stream": "^0.3.4"
   }
 }
